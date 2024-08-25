@@ -1,11 +1,40 @@
-from machine import Pin, SoftI2C, ADC
+from machine import Pin, SoftI2C, ADC, PWM
 import neopixel
 import time
 from ssd1306 import SSD1306_I2C
+#Dificuldades
+# Rodar preso no loop, ponto de exclamação e acento
 
 # Configuração do OLED
 i2c = SoftI2C(scl=Pin(15), sda=Pin(14))
 oled = SSD1306_I2C(128, 64, i2c)
+
+# Configuração do buzzer (Buzzer A no GPIO21)
+buzzer = PWM(Pin(21))
+
+# Função para tocar o som
+def play_sound(duration=0.5, frequency=1000):
+    buzzer.freq(frequency)
+    buzzer.duty_u16(32768)  # 50% duty cycle
+    time.sleep(duration)
+    buzzer.deinit()
+    
+
+# Mostrar mensagem de boas-vindas
+def show_welcome_message():
+    oled.fill(0)
+    line1 = "BEM VINDO"
+    line2 = "A NOVA ARTE"
+    line3 = "MODERNA"
+    
+    oled.text(line1, (128 - len(line1) * 8) // 2, 20)  # Centraliza a primeira linha
+    oled.text(line2, (128 - len(line2) * 8) // 2, 35)  # Centraliza a segunda linha
+    oled.text(line3, (128 - len(line3) * 8) // 2, 50)  # Centraliza a segunda linha
+    oled.show()
+    time.sleep(2)
+    
+play_sound()
+show_welcome_message()
 
 # Configuração da Matriz de LEDs 5x5
 NUM_LEDS = 25
@@ -142,5 +171,4 @@ while True:
 
     draw_canvas()  # Atualiza o display OLED com o canvas atual e a moldura
     time.sleep(0.1)
-
 
