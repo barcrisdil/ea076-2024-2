@@ -121,7 +121,6 @@ def update_led_matrix():
 
     np.write()
 
-# Função para atualizar a posição do pincel
 def update_brush():
     global brush_x, brush_y
     
@@ -129,10 +128,10 @@ def update_brush():
     y_val = joystick_y.read_u16() // 2048
     
     # Atualiza as coordenadas do pincel
-    if x_val > 20 and brush_x > 0:
-        brush_x -= 1
-    elif x_val < 10 and brush_x < canvas_width - 1:
+    if x_val > 20 and brush_x < canvas_width - 1:
         brush_x += 1
+    elif x_val < 10 and brush_x > 0:
+        brush_x -= 1
 
     if y_val > 20 and brush_y < canvas_height - 1:
         brush_y += 1
