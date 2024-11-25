@@ -21,6 +21,8 @@ Com as conexões necessárias identificadas, projetou-se, através do software K
 
 <img src="Layout_placa.png">
 
+Layout
+
 
 # Resultados e Conclusão 
 
