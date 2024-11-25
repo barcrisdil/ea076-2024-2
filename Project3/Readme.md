@@ -35,7 +35,7 @@ Com os conectores devidamente soldados e os periféricos conectados, o projeto f
 
 <img src="Setup - EA076.jpeg" width="60%" height="60%">
 
-
+* O projeto completo da placa se encontra no arquivo ArquivoKicad_placa
 # Resultados e Conclusão 
 
 Como parte do projeto tivemos um erro de design na placa em que o potenciômetro não foi conectado a uma entrada ADC, impossibilitando sua leitura. No geral a limitação de usar as apenas as entradas disponíveis no conector IDC da Bitdoglab, gerou complexidade e inflexibilidade nas possibilidades de design. Em relação a UART que estava disponivel nos GPIO 8 e 9, ela não funcionou como esperado sem conclusão sobre seu mal funcionamento. Para o correto funcionamento desse projeto é necessário reajustar esses pontos de design como um todo da placa impressa e suas conexões com a Bitdoglab. 
