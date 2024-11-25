@@ -11,7 +11,7 @@ Além disso para dar suporte ao Oled será utilizado um mini-cavalete confeccion
 
 # Cavalete 3D
 
-O cavalete foi obtido através do link: [Cavalete]()
+O cavalete foi obtido através do link: [Cavalete](https://www.thingiverse.com/thing:355110)
 
 <img src="\images\logo1.png">
 
