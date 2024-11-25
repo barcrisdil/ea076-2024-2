@@ -19,7 +19,7 @@ O cavalete foi obtido através do link:
 # Layout da Placa
 Com as conexões necessárias identificadas, projetou-se, através do software KiCAD, a placa:
 
-<img src="\images\logo1.png">
+<img src="Layout_placa.png">
 
 
 # Resultados e Conclusão 
