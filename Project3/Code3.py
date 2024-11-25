@@ -1,3 +1,11 @@
+"""
+O código abaixo corresponde ao projeto 2. Abaixo estão listadas as alterações a serem implementadas:
+- Configuração do módulo Bluetooth, de forma a transmitir as imagens confeccionadas no CANVAS para os dispositivos compatíveis; celulares, computadores, etc.
+- Configuração do Módulo Oled colorido, para mostrar as cores da tela que está sendo confeccionada.
+- Configuração para atualização dos dados entre as duas placas através do acionamento do botão.
+- Configuração do potenciômetro para controle dos LEDs, de forma a variar a intensidade de luminosidade. 
+"""
+
 from machine import Pin, SoftI2C, ADC, PWM, UART
 import neopixel
 import time
