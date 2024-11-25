@@ -13,15 +13,27 @@ Além disso para dar suporte ao Oled será utilizado um mini-cavalete confeccion
 
 O cavalete foi obtido através do link: [Cavalete](https://www.thingiverse.com/thing:355110)
 
-<img src="Minicavalete.jpg">
+<img src="Minicavalete.jpg" width="65%" height="65%">
 
+# Esquemático de conexões
+Com as conexões necessárias identificadas, elaborou-se o seguite esquemático.
 
-# Layout da Placa
-Com as conexões necessárias identificadas, projetou-se, através do software KiCAD, a placa:
+<img src="Esquemático.png">
+
+# Layout das Trilhas
+Em seguida, pensou-se nas trilhas a serem confeccionadas. Alguns ajustes de localização dos componentes foram realizados para otimizar a placa.
 
 <img src="Layout_placa.png">
 
-Layout
+# 3D
+Dessa forma, o 3D obtido no KiCAD encontra-se abaixo:
+
+<img src="Layout_3D.png">
+
+# Setup Final
+Com os conectores devidamente soldados e os periféricos conectados, o projeto final apresenta-se abaixo:
+
+<img src="Setup - EA076.jpeg">
 
 
 # Resultados e Conclusão 
