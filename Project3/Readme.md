@@ -9,6 +9,10 @@ O projeto 3 consiste em uma nova versão dos anteriores em que após integrar a 
 
 Além disso para dar suporte ao Oled será utilizado um mini-cavalete confeccionado em uma impressora 3D.
 
+# Fluxograma 
+Para compreender melhor as etapas e o funcionamento do projeto, elaboramos o seguinte fluxograma:
+<img src="Flowchart.jpeg" width="50%" height="50%">
+
 # Cavalete 3D
 
 O cavalete foi obtido através do link: [Cavalete](https://www.thingiverse.com/thing:355110)
